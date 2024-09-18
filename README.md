@@ -10,3 +10,10 @@ fo typeScpit i had to create the file 'nativewind-env.d.ts' before i could have 
 
 I did'nt use the normal expo-three as it was having 'peer dependency issues' so I used
 npm install three @react-three/fiber @react-three/drei
+\
+
+I had an issue loading the gltf and the .bin files differently so i had to convert them into one single .glb file using the CL tool
+npm install -g gltf-pipeline
+add my gltd and .bin in thesame folder and run
+gltf-pipeline -i input.gltf -o output.glb
+this loaded the glb file , thougn not what i expected but it was loaded
