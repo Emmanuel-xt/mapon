@@ -1,12 +1,45 @@
 import { View, Text } from "react-native";
 import React from "react";
+import { Tabs } from "expo-router";
 
-const _layout = () => {
+const Layout = () => {
   return (
-    <View>
-      <Text>_layout</Text>
-    </View>
+    <Tabs
+      initialRouteName="index"
+      screenOptions={{
+        tabBarActiveTintColor: "blue",
+        tabBarInactiveTintColor: "white",
+        tabBarShowLabel: false,
+        tabBarStyle: {
+          backgroundColor: "#333333",
+          borderRadius: 50,
+          paddingBottom: 0,
+          overflow: "hidden",
+          marginHorizontal: 20,
+          marginBottom: 20,
+          height: 78,
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "row",
+          position: "absolute",
+        },
+      }}
+    >
+      <Tabs.Screen
+        name="home"
+        options={{
+          title: "Home",
+        }}
+      />
+
+      <Tabs.Screen
+        name="map"
+        options={{
+          title: "Map",
+        }}
+      />
+    </Tabs>
   );
 };
 
-export default _layout;
+export default Layout;
