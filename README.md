@@ -17,3 +17,6 @@ npm install -g gltf-pipeline
 add my gltd and .bin in thesame folder and run
 gltf-pipeline -i input.gltf -o output.glb
 this loaded the glb file , thougn not what i expected but it was loaded
+
+
+Transiting baco to continue qith Cesium Js, will be right back here in time
